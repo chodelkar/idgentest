@@ -1,0 +1,139 @@
+/* Reset and basic styles */
+html, body {
+  height: 100%;           /* Ensure the html and body take up the full viewport height */
+  margin: 0;
+}
+
+body {
+  display: flex;          /* Use flexbox layout for the body */
+  flex-direction: column; /* Arrange children in a column */
+  min-height: 100vh;      /* Ensure the body takes up at least the full viewport height */
+
+}
+
+main {
+  flex: 1;                /* Make the main content area take up the remaining space */
+}
+
+/* Style for the header */
+header {
+  background-color: #096dd9;
+  color: #fff;
+  text-align: center;     /* Center the text horizontally within the header */
+  padding: 09px 0;        /* Padding for vertical spacing */
+  position: relative;     /* Create a positioned context for absolute positioning */
+  margin-top: 0;          /* Remove any default top margin */
+}
+
+/* Style for the h1 element inside the header */
+header h1 {
+  margin: 0;              /* Remove default margin */
+  font-size: 1.5rem;        /* Smaller font size */
+  font-weight: bold;      /* Make the text bold */
+  padding-right: 88%;       /* Add padding to the left to achieve left alignment */
+  text-align: left;       /* Align the text within h1 to the left */
+  display: inline-block;  /* Make the h1 inline-block to respect padding */
+}
+
+/* Main content styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Section styles */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-top: 0;
+}
+
+/* ID Generator form styles */
+#generator {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#idGeneratorForm {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+select,
+button {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Generated ID display styles */
+#generatedID {
+  background-color: #e9f7fc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#generatedID p {
+  margin: 0;
+}
+
+#generatedID strong {
+  font-weight: bold;
+}
+
+/* Password Generator section styles */
+#password-generator {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#generatedPassword {
+  background-color: #e9f7fc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#generatedPassword p {
+  margin: 0;
+}
+
+#generatedPassword strong {
+  font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;  /* Custom background color */
+  color: #f8f9fa;          /* Custom text color */
+  text-align: center;      /* Center text alignment */
+  padding: 0 rem 0;       /* Reduced padding around the footer */
+  font-size: 1rem;     /* Optional: Make the text slightly smaller */
+  width: 100%;             /* Ensure the footer takes full width */
+  box-sizing: border-box;  /* Include padding in the total width */
+}
+
