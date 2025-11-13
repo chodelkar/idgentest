@@ -22,6 +22,9 @@ function generateID() {
     case "brazil":
       generatedID = generateCPF_Brazil();
       break;
+    case "greece":
+      generatedID = generateAFM_Greece();
+      break;  
     default:
       generatedID = "Select a country and click 'Generate ID'.";
       break;
@@ -350,6 +353,34 @@ function displayGeneratedID() {
 
 // Attach event listener to the button to generate and display CPF
 document.getElementById("generateButton").addEventListener("click", displayGeneratedID);
+
+//////////////////////////////////////////////////////////////////////////////////////
+// Function to generate AFM (Tax Identification Number) for Greece
+function generateAFM_Greece() {
+  // Helper to generate a random integer between min and max (inclusive)
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Generate first 8 random digits
+  let digits = Array.from({ length: 8 }, () => getRandomInt(0, 9));
+
+  // Compute checksum according to Greek AFM rules:
+  // Each digit (starting from rightmost of the 8) is multiplied by 2^position (1,2,4,...,128)
+  // Sum the results and take modulo 11. If remainder = 10, checksum = 0.
+  let sum = 0;
+  for (let i = 0; i < 8; i++) {
+    sum += digits[7 - i] * Math.pow(2, i + 1);
+  }
+  let remainder = sum % 11;
+  let checkDigit = remainder === 10 ? 0 : remainder;
+
+  // Combine all digits
+  const afm = digits.join('') + checkDigit;
+
+  // Optional: format for readability
+  return afm;
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// Function to generate EGN for Bulgaria
 
