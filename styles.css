@@ -86,7 +86,7 @@ button {
 
 /* Generated ID display styles */
 #generatedID {
-  background-color: #e9f7fc;
+  background-color: #fee5e5;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -109,7 +109,7 @@ button {
 }
 
 #generatedPassword {
-  background-color: #e9f7fc;
+  background-color: #fee5e5;
   padding: 15px;
   border-radius: 8px;
   margin-top: 20px;
