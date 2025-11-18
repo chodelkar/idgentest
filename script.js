@@ -352,7 +352,6 @@ function displayGeneratedID() {
 }
 
 // Attach event listener to the button to generate and display CPF
-document.getElementById("generateButton").addEventListener("click", displayGeneratedID);
 
 //////////////////////////////////////////////////////////////////////////////////////
 // Function to generate AFM (Tax Identification Number) for Greece
@@ -459,7 +458,6 @@ function displayGeneratedEGN() {
 }
 
 // Attach event listener to the button to generate and display EGN
-document.getElementById("generateButton").addEventListener("click", displayGeneratedEGN);
 
 function generatePassword() {
   const length = 12;
