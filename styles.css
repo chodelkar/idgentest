@@ -140,10 +140,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;        /* space between logo and title */
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .header-with-logo .logo {
-    width: 25px;      /* adjust size */
+    width: 50px;      /* adjust size */
     height: auto;
 }
