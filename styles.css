@@ -136,4 +136,14 @@ footer {
   width: 100%;             /* Ensure the footer takes full width */
   box-sizing: border-box;  /* Include padding in the total width */
 }
+.header-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;        /* space between logo and title */
+    margin-bottom: 20px;
+}
 
+.header-with-logo .logo {
+    width: 50px;      /* adjust size */
+    height: auto;
+}
