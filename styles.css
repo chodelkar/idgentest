@@ -19,20 +19,17 @@ main {
 header {
   background-color: #096dd9;
   color: #fff;
-  text-align: center;     /* Center the text horizontally within the header */
-  padding: 09px 0;        /* Padding for vertical spacing */
-  position: relative;     /* Create a positioned context for absolute positioning */
-  margin-top: 0;          /* Remove any default top margin */
+  padding: 9px 15px;     /* cleaner spacing */
+  display: flex;
+  align-items: center;
 }
 
 /* Style for the h1 element inside the header */
 header h1 {
-  margin: 0;              /* Remove default margin */
-  font-size: 1.5rem;        /* Smaller font size */
-  font-weight: bold;      /* Make the text bold */
-  padding-right: 88%;       /* Add padding to the left to achieve left alignment */
-  text-align: left;       /* Align the text within h1 to the left */
-  display: inline-block;  /* Make the h1 inline-block to respect padding */
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;  /* keep the text on one row */
 }
 
 /* Main content styles */
@@ -136,15 +133,16 @@ footer {
   width: 100%;             /* Ensure the footer takes full width */
   box-sizing: border-box;  /* Include padding in the total width */
 }
+/* Wrapper for logo + text */
 .header-with-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;               /* smaller spacing */
-    justify-content: flex-start;
-    white-space: nowrap;     /* prevents text from wrapping */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
 }
 
+/* Logo size */
 .header-with-logo .logo {
-    width: 28px;             /* smaller logo */
-    height: auto;
+  width: 28px;
+  height: auto;
 }
