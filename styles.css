@@ -146,3 +146,14 @@ footer {
   width: 28px;
   height: auto;
 }
+
+/* Override Bootstrap primary button color to #FD0104 */
+.btn-primary {
+    background-color: #FD0104 !important;
+    border-color: #FD0104 !important;
+}
+
+.btn-primary:hover {
+    background-color: #E80104 !important;   /* slightly darker for hover */
+    border-color: #E80104 !important;
+}
