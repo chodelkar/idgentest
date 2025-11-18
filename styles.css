@@ -148,21 +148,32 @@ footer {
 }
 
 /* Override Bootstrap primary buttons to red #FD0104 */
-.btn.btn-primary {
-  background-color: #FD0104 !important;
-  border-color: #FD0104 !important;
-  color: #fff;  /* ensure text is visible */
+/* Make all buttons red and override Bootstrap */
+button,
+button.btn,
+button.btn-primary {
+  background-color: #FD0104 !important;  /* Red background */
+  border-color: #FD0104 !important;      /* Red border */
+  color: #fff !important;                /* White text */
+  cursor: pointer;
 }
 
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.btn.btn-primary:active {
-  background-color: #E80104 !important;
-  border-color: #E80104 !important;
+/* Hover effect: slightly darker red */
+button:hover,
+button.btn:hover,
+button.btn-primary:hover {
+  background-color: #e60003 !important;
+  border-color: #e60003 !important;
 }
 
+/* Remove blue focus glow */
 button:focus,
-.btn:focus {
-  outline: 2px solid #FD0104 !important;
-  box-shadow: 0 0 5px #FD0104 !important;
+button.btn:focus,
+button.btn-primary:focus,
+button:active,
+button.btn:active,
+button.btn-primary:active,
+button:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 5px #FD0104 !important; /* Optional: small red glow */
 }
