@@ -147,13 +147,16 @@ footer {
   height: auto;
 }
 
-/* Override Bootstrap primary button color to #FD0104 */
-.btn-primary {
-    background-color: #FD0104 !important;
-    border-color: #FD0104 !important;
+/* Override Bootstrap primary buttons to red #FD0104 */
+.btn.btn-primary {
+  background-color: #FD0104 !important;
+  border-color: #FD0104 !important;
+  color: #fff;  /* ensure text is visible */
 }
 
-.btn-primary:hover {
-    background-color: #E80104 !important;   /* slightly darker for hover */
-    border-color: #E80104 !important;
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  background-color: #E80104 !important;
+  border-color: #E80104 !important;
 }
