@@ -177,3 +177,17 @@ button:focus-visible {
   outline: none !important;
   box-shadow: 0 0 5px #FD0104 !important; /* Optional: small red glow */
 }
+
+/* Centered logo under header */
+.centered-logo {
+  text-align: center;
+  margin: 20px 0; /* space above and below logo */
+}
+
+.centered-logo img {
+  max-width: 300px;   /* adjust size */
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3)); /* optional shadow */
+}
