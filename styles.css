@@ -86,7 +86,7 @@ button {
 
 /* Generated ID display styles */
 #generatedID {
-  background-color: #fee5e5;
+  background-color: ##fef4f4;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -109,7 +109,7 @@ button {
 }
 
 #generatedPassword {
-  background-color: #fee5e5;
+  background-color: ##fef4f4;
   padding: 15px;
   border-radius: 8px;
   margin-top: 20px;
@@ -159,4 +159,10 @@ footer {
 .btn.btn-primary:active {
   background-color: #E80104 !important;
   border-color: #E80104 !important;
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid #FD0104 !important;
+  box-shadow: 0 0 5px #FD0104 !important;
 }
