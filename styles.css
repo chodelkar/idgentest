@@ -139,11 +139,12 @@ footer {
 .header-with-logo {
     display: flex;
     align-items: center;
-    gap: 15px;        /* space between logo and title */
-    margin-bottom: 5px;
+    gap: 10px;               /* smaller spacing */
+    justify-content: flex-start;
+    white-space: nowrap;     /* prevents text from wrapping */
 }
 
 .header-with-logo .logo {
-    width: 50px;      /* adjust size */
+    width: 28px;             /* smaller logo */
     height: auto;
 }
