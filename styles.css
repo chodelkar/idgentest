@@ -97,7 +97,7 @@ button {
 }
 
 #generatedID strong {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 /* Password Generator section styles */
@@ -121,6 +121,41 @@ button {
 
 #generatedPassword strong {
   font-weight: bold;
+}
+
+/* Copy button styles */
+.btn-copy {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+  margin-left: 8px;
+  display: inline-block;
+  text-align: center;
+  min-width: 32px;
+}
+
+.btn-copy:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+.btn-copy:active {
+  background-color: #e0e0e0;
+}
+
+.btn-copy.copied {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+/* Copy cell in table */
+.copy-cell {
+  text-align: center;
+  padding: 8px !important;
 }
 
 /* Footer styles */
